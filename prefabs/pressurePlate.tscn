@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://biyx0la5cmvda"]
+
+[ext_resource type="PackedScene" uid="uid://dki6c3p8c7vbj" path="res://models/glb/pressurePlatePlate.glb" id="1_f0478"]
+[ext_resource type="Script" path="res://models/glb/pressurePlate.gd" id="2_fcbog"]
+[ext_resource type="PackedScene" uid="uid://bg48ra6fuo0r6" path="res://models/glb/pressurePlateBase.glb" id="3_qlhoo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fxobq"]
+size = Vector3(2.00586, 0.0291748, 1.98608)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ieqt2"]
+size = Vector3(1.98047, 10.2121, 1.97754)
+
+[node name="PressurePlate" type="Node3D" node_paths=PackedStringArray("collider", "plate")]
+script = ExtResource("2_fcbog")
+collider = NodePath("StaticBody3D/Area3D/CollisionShape3D")
+plate = NodePath("StaticBody3D")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="."]
+
+[node name="pressurePlateBase" parent="StaticBody3D2" instance=ExtResource("3_qlhoo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0717773, 0)
+shape = SubResource("BoxShape3D_fxobq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="pressurePlatePlate" parent="StaticBody3D" instance=ExtResource("1_f0478")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+
+[node name="Area3D" type="Area3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.302268, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.96418, 0)
+shape = SubResource("BoxShape3D_ieqt2")
