@@ -1,28 +1,117 @@
-[gd_scene load_steps=7 format=3 uid="uid://1tpiypk6q276"]
+[gd_scene load_steps=10 format=3 uid="uid://1tpiypk6q276"]
 
-[ext_resource type="PackedScene" uid="uid://dlvovm72lc7tl" path="res://models/glb/platform1.glb" id="1_75ce7"]
-[ext_resource type="PackedScene" uid="uid://dho3obwk0j4lk" path="res://models/glb/platform2.glb" id="2_nsa0m"]
-[ext_resource type="PackedScene" uid="uid://bmax7nbt054vw" path="res://models/glb/platform3.glb" id="3_grj7l"]
-[ext_resource type="PackedScene" uid="uid://cfql7j6cktq4p" path="res://models/glb/platform4.glb" id="4_f2utd"]
-[ext_resource type="PackedScene" uid="uid://cdj3pao87pkqo" path="res://models/glb/platform5.glb" id="5_qxhop"]
-[ext_resource type="PackedScene" uid="uid://bjleeh2yoeb68" path="res://models/glb/platform6.glb" id="6_w4ise"]
+[ext_resource type="PackedScene" uid="uid://bngo7kwdg8y5n" path="res://prefabs/platform.tscn" id="2_tybi2"]
+[ext_resource type="Script" path="res://levels/PlayerController.gd" id="7_oeujf"]
+[ext_resource type="PackedScene" uid="uid://bj5err828g4eb" path="res://prefabs/bridge.tscn" id="8_yce60"]
+[ext_resource type="PackedScene" uid="uid://blfn3hbe880oe" path="res://prefabs/bridgeFinal.tscn" id="9_pu5i0"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3t88u"]
+sky_top_color = Color(0.0351365, 0.0337292, 0.0312264, 1)
+sky_horizon_color = Color(0.521371, 0.516507, 0.528313, 1)
+ground_bottom_color = Color(0.0503471, 0.0322987, 0.0820248, 1)
+ground_horizon_color = Color(0.521371, 0.516507, 0.528313, 1)
+
+[sub_resource type="Sky" id="Sky_ih6yg"]
+sky_material = SubResource("ProceduralSkyMaterial_3t88u")
+
+[sub_resource type="Environment" id="Environment_x5w1c"]
+background_mode = 2
+sky = SubResource("Sky_ih6yg")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_3h40d"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ychiv"]
+points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607, 0.498884, 0.169713, 0.559144, 0.464172, 0.231051, -0.803591, 0.320455, 0.40741, 0.651043, -0.243523, -0.482789, 0.594843, 0.0822132, -0.362868, -0.682312, 0.289697, 0.469044, -0.654529, -0.0662713, -0.127444, 0.842701, -0.338103, -0.393435, -0.683942, -0.244717, 0.438255, 0.623309, 0.200849, 0.0841477, 0.977454, 0.114795, -0.0682023, -0.976458, -0.12927, 0.20055, -0.563129, -0.451454, -0.185527, 0.595453, -0.453475, -0.273363, 0.592268, 0.407754, -0.00693649, -0.476823, 0.49966, 0.375821, -0.588614, 0.316955, 0.111579, 0.563059, -0.481177, -0.41725, 0.527866, -0.270497, -0.484546, -0.596972, -0.0665097, -0.279747, 0.908561, 0.0533361, -0.250197, -0.880712, 0.205319, 0.263647, -0.902771, -0.127394, 0.293368, 0.871526, -0.157196, 0.373412, -0.526319, -0.328246, 0.499663, 0.476641, -0.00688856, 0.0531056, 0.875001, 0.324703, -0.154543, -0.590854, 0.465879, -0.0972799, -0.782358, -0.398188, -0.387649, -0.498171, 0.31565, -0.30068, -0.587995, -0.388901)
 
 [node name="Node3D" type="Node3D"]
 
-[node name="platform1" parent="." instance=ExtResource("1_75ce7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.491599, 0, -1.64915)
+[node name="Environment" type="Node" parent="."]
 
-[node name="platform2" parent="." instance=ExtResource("2_nsa0m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.74992, 2.70884, 16.383)
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Environment"]
+environment = SubResource("Environment_x5w1c")
 
-[node name="platform3" parent="." instance=ExtResource("3_grj7l")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.37051, 6.49402, 34.5766)
+[node name="OmniLight3D" type="OmniLight3D" parent="Environment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 21.8634, -4.66621)
+light_energy = 5.929
+omni_range = 11.363
 
-[node name="platform4" parent="." instance=ExtResource("4_f2utd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.51475, -1.44618, 51.7131)
+[node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, -3.48787e-16, 3.48787e-16, 3.48787e-16, 1, -3.48787e-16, -3.48787e-16, 3.48787e-16, 1, -1.25366, 16.1576, -3.07966)
+script = ExtResource("7_oeujf")
 
-[node name="platform5" parent="." instance=ExtResource("5_qxhop")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.8863, 5.27451, 46.1427)
+[node name="Mesh" type="MeshInstance3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = SubResource("CapsuleMesh_3h40d")
 
-[node name="platform6" parent="." instance=ExtResource("6_w4ise")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.6022, 14.2836, 39.3576)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+shape = SubResource("ConvexPolygonShape3D_ychiv")
+
+[node name="cameraPivot" type="Node3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.393746, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Player/cameraPivot"]
+
+[node name="platform1" parent="." instance=ExtResource("2_tybi2")]
+
+[node name="platform2" parent="." instance=ExtResource("2_tybi2")]
+transform = Transform3D(-4.37114e-08, 3.48787e-16, 1, 3.48787e-16, 1, -3.48787e-16, -1, 3.48787e-16, -4.37114e-08, -3.73904, 2.45205, 24.8147)
+
+[node name="platform3" parent="." instance=ExtResource("2_tybi2")]
+transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, -6.45874, 4.07277, 44.2502)
+
+[node name="platform4" parent="." instance=ExtResource("2_tybi2")]
+transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, 12.845, 2.39406, 52.3496)
+
+[node name="platform7" parent="." instance=ExtResource("2_tybi2")]
+transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, 38.2451, 4.87484, 46.7783)
+
+[node name="platform8" parent="." instance=ExtResource("2_tybi2")]
+transform = Transform3D(-1, 3.48787e-16, -8.74228e-08, 3.48787e-16, 1, -3.48787e-16, 8.74228e-08, -3.48787e-16, -1, 60.6562, 6.84559, 41.1062)
+
+[node name="Bridge" parent="." instance=ExtResource("8_yce60")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.17377, -0.0445471, 7.86156)
+
+[node name="Bridge2" parent="." instance=ExtResource("8_yce60")]
+transform = Transform3D(1, 0, -0.000802851, 0, 1, 0, 0.000802851, 0, 1, 1.17648, 0.505797, 10.5892)
+
+[node name="Bridge3" parent="." instance=ExtResource("8_yce60")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.79547, 0.999935, 13.5489)
+
+[node name="BridgeEnd" parent="." instance=ExtResource("9_pu5i0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.466819, 1.52994, 16.5303)
+
+[node name="Bridge4" parent="." instance=ExtResource("8_yce60")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.58127, 2.54912, 33.0043)
+
+[node name="BridgeEnd2" parent="." instance=ExtResource("9_pu5i0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7968, 3.12396, 35.9885)
+
+[node name="Bridge5" parent="." instance=ExtResource("8_yce60")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.61495, 2.53278, 49.1175)
+
+[node name="BridgeEnd3" parent="." instance=ExtResource("9_pu5i0")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.63075, 3.10762, 47.4291)
+
+[node name="Bridge6" parent="." instance=ExtResource("8_yce60")]
+transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 21.0516, 2.46686, 49.0518)
+
+[node name="Bridge7" parent="." instance=ExtResource("8_yce60")]
+transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 24.0276, 2.95276, 50.015)
+
+[node name="Bridge8" parent="." instance=ExtResource("8_yce60")]
+transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 27.0446, 3.46451, 49.5632)
+
+[node name="BridgeEnd4" parent="." instance=ExtResource("9_pu5i0")]
+transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 30.0478, 3.91289, 49.9726)
+
+[node name="Bridge9" parent="." instance=ExtResource("8_yce60")]
+transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 46.3986, 4.9845, 43.5297)
+
+[node name="Bridge10" parent="." instance=ExtResource("8_yce60")]
+transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 49.3745, 5.4704, 42.744)
+
+[node name="BridgeEnd5" parent="." instance=ExtResource("9_pu5i0")]
+transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 52.4252, 5.94399, 44.4504)
