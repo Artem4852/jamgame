@@ -12,6 +12,7 @@ size = Vector3(6.11499, 1, 1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, -100, 2.08165e-12)
 
 [node name="Mesh" parent="StaticBody3D" instance=ExtResource("1_uui2s")]
 

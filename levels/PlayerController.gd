@@ -4,11 +4,16 @@ extends CharacterBody3D
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 const cameraRotationSpeed = 0.004
+var carrying = null
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 @onready var cameraPivot := $cameraPivot
 @onready var camera := $cameraPivot/Camera3D
+
+@export var props: Node3D
+
+@export var raycast: RayCast3D
 
 func _unhandled_input(event):
 	if event is InputEventMouseButton:
@@ -36,3 +41,27 @@ func _physics_process(delta):
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+
+func _process(delta):
+	print(camera.get_children())
+	if Input.is_action_just_pressed("grab"):
+		if carrying == null:
+			if raycast.is_colliding():
+				var object = raycast.get_collider()
+
+				if object.get_meta('tag') == 'crate':
+					var global_transform_before = object.global_transform
+					object.freeze = true
+					props.remove_child(object)
+					camera.add_child(object)
+
+					object.global_transform = global_transform_before
+					
+					carrying = object
+		else:
+			var global_transform_before = carrying.global_transform
+			camera.remove_child(carrying)
+			props.add_child(carrying)
+			carrying.global_transform = global_transform_before
+			carrying.freeze = false
+			carrying = null
