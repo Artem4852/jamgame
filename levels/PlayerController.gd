@@ -41,9 +41,13 @@ func _physics_process(delta):
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+	
+func move_crate(amount):
+	if carrying == null: return
+	carrying.position.z = clamp(carrying.position.z+amount, -3, -1.28)
 
 func _process(delta):
-	print(camera.get_children())
+	if carrying: print(carrying.position)
 	if Input.is_action_just_pressed("grab"):
 		if carrying == null:
 			if raycast.is_colliding():
@@ -65,3 +69,8 @@ func _process(delta):
 			carrying.global_transform = global_transform_before
 			carrying.freeze = false
 			carrying = null
+
+	if Input.is_action_pressed("scroll_up"):
+		move_crate(-1*delta)
+	elif Input.is_action_pressed("scroll_down"):
+		move_crate(1*delta)
