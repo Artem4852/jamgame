@@ -22,7 +22,7 @@ func check_for_overlaps():
 		var overlapping_bodies = area.get_overlapping_bodies()
 		var n = 0;
 		for body in overlapping_bodies:
-			var tag = body.get_meta('tag')
+			var tag = body.get_meta('tag', 'empty')
 			if tag == 'crate' and int(body.linear_velocity.y) == 0 and not body.freeze:
 				n += 1
 		return n
@@ -30,7 +30,7 @@ func check_for_overlaps():
 
 func _process(delta):
 	var overlaps = check_for_overlaps()
-	if overlaps > 1: 
+	if overlaps > 4: 
 		broken = true
 		particleSystem.emitting = true
 	plate.position.y = clamp(-0.02 * overlaps, -0.1, 0)

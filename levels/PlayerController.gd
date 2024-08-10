@@ -53,7 +53,7 @@ func _process(delta):
 			if raycast.is_colliding():
 				var object = raycast.get_collider()
 
-				if object.get_meta('tag') == 'crate':
+				if object.get_meta('tag', null) == 'crate':
 					var global_transform_before = object.global_transform
 					object.freeze = true
 					props.remove_child(object)
