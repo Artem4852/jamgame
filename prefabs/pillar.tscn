@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1840dpnl60k4"]
+
+[ext_resource type="PackedScene" uid="uid://b3uai6lcnwh26" path="res://models/glb/floatingPillar.glb" id="1_xv5rx"]
+
+[node name="pillar" type="Node3D"]
+
+[node name="floatingPillar" parent="." instance=ExtResource("1_xv5rx")]
