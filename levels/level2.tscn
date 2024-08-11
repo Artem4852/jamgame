@@ -1,16 +1,35 @@
-[gd_scene load_steps=5 format=3 uid="uid://by4n6grspyt4"]
+[gd_scene load_steps=8 format=3 uid="uid://by4n6grspyt4"]
 
 [ext_resource type="PackedScene" uid="uid://c2tvuso3gj2vl" path="res://prefabs/player.tscn" id="1_dj8gw"]
 [ext_resource type="PackedScene" uid="uid://b1840dpnl60k4" path="res://prefabs/pillar.tscn" id="1_t21h5"]
 [ext_resource type="PackedScene" uid="uid://uy14my04gn4o" path="res://prefabs/platformMaze.tscn" id="2_48ifd"]
 [ext_resource type="PackedScene" uid="uid://c1h17yiea1vcg" path="res://prefabs/maze.tscn" id="3_x13k2"]
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_qea8r"]
+sky_top_color = Color(0.0351365, 0.0337292, 0.0312264, 1)
+sky_horizon_color = Color(0.521371, 0.516507, 0.528313, 1)
+ground_bottom_color = Color(0.0503471, 0.0322987, 0.0820248, 1)
+ground_horizon_color = Color(0.521371, 0.516507, 0.528313, 1)
+
+[sub_resource type="Sky" id="Sky_ih6yg"]
+sky_material = SubResource("ProceduralSkyMaterial_qea8r")
+
+[sub_resource type="Environment" id="Environment_2hm28"]
+background_mode = 1
+background_color = Color(0.0453124, 0.0453124, 0.0453124, 1)
+sky = SubResource("Sky_ih6yg")
+tonemap_mode = 2
+glow_enabled = true
+
 [node name="Level 2" type="Node3D"]
 
-[node name="Player" parent="." node_paths=PackedStringArray("props", "raycast") instance=ExtResource("1_dj8gw")]
+[node name="Environment" type="Node" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Environment"]
+environment = SubResource("Environment_2hm28")
+
+[node name="Player" parent="." instance=ExtResource("1_dj8gw")]
 transform = Transform3D(1, -3.48787e-16, 3.48787e-16, 3.48787e-16, 1, -3.48787e-16, -3.48787e-16, 3.48787e-16, 1, -4.5929, 1.39727, 50.4355)
-props = NodePath("")
-raycast = NodePath("")
 
 [node name="Pillars" type="Node3D" parent="."]
 
