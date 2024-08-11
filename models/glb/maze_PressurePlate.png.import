@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2t5sj472jxq2"
-path.s3tc="res://.godot/imported/Crate.png-59f89db6a34967a698d64fc0becbb169.s3tc.ctex"
+uid="uid://c2uu4ux14547h"
+path.s3tc="res://.godot/imported/maze_PressurePlate.png-e619b080a681d7a9acb8ffe070b0295e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "5a771e7193636ae1dd26813d9622e5a2"
+}
 
 [deps]
 
-source_file="res://textures/Crate.png"
-dest_files=["res://.godot/imported/Crate.png-59f89db6a34967a698d64fc0becbb169.s3tc.ctex"]
+source_file="res://models/glb/maze_PressurePlate.png"
+dest_files=["res://.godot/imported/maze_PressurePlate.png-e619b080a681d7a9acb8ffe070b0295e.s3tc.ctex"]
 
 [params]
 

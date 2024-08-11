@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://uy14my04gn4o"]
+
+[ext_resource type="PackedScene" uid="uid://dt5dfgrwoygjb" path="res://models/glb/platformMaze.glb" id="1_wwv6a"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t3pv8"]
+size = Vector3(105, 26.5, 105)
+
+[node name="platformMaze" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, -13.25, 2.08165e-12)
+shape = SubResource("BoxShape3D_t3pv8")
+
+[node name="platformMaze" parent="StaticBody3D" instance=ExtResource("1_wwv6a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)

@@ -47,7 +47,6 @@ func move_crate(amount):
 	carrying.position.z = clamp(carrying.position.z+amount, -3, -1.28)
 
 func _process(delta):
-	if carrying: print(carrying.position)
 	if Input.is_action_just_pressed("grab"):
 		if carrying == null:
 			if raycast.is_colliding():

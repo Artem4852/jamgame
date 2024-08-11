@@ -9,12 +9,14 @@ extends Node3D
 @export var bridges: Node3D
 @export var particleSystem: GPUParticles3D
 
-var broken = false
+static var broken = false
 
 var appearingSpeed = 70
 
 func _ready():
-	pass
+	print("Instance name: ", name)
+	print("Parent: ", get_parent().name)
+	print("Bridges count: ", bridges.get_child_count())
 
 func check_for_overlaps():
 	var area = collider.get_parent() as Area3D
@@ -35,6 +37,7 @@ func _process(delta):
 		particleSystem.emitting = true
 	plate.position.y = clamp(-0.02 * overlaps, -0.1, 0)
 	if not broken:
+		print(name, " ", overlaps)
 		if bridge1:
 			var bridge1 = bridge1.get_child(0)
 			if overlaps > 0:
@@ -63,4 +66,4 @@ func _process(delta):
 		var bridges_individual = bridges.get_children()
 		for bridge in bridges_individual:
 			var bridge_ch = bridge.get_child(0)
-			bridge_ch.position.y = clamp(bridge_ch.position.y+appearingSpeed*delta, -100, 0)
+			bridge_ch.position.y = clamp(bridge_ch.position.y+appearingSpeed/10*delta, -100, 0)

@@ -25,7 +25,7 @@ sky = SubResource("Sky_ih6yg")
 tonemap_mode = 2
 glow_enabled = true
 
-[node name="Node3D" type="Node3D"]
+[node name="Level 1" type="Node3D"]
 
 [node name="Environment" type="Node" parent="."]
 
@@ -102,7 +102,8 @@ spot_range = 12.306
 spot_angle = 42.14
 spot_angle_attenuation = 3.24901
 
-[node name="Player" parent="." instance=ExtResource("1_wcgxr")]
+[node name="Player" parent="." node_paths=PackedStringArray("props") instance=ExtResource("1_wcgxr")]
+props = NodePath("../Props")
 
 [node name="Platforms" type="Node3D" parent="."]
 
@@ -150,25 +151,25 @@ transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.68904,
 transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.70484, 3.10762, 47.4291)
 
 [node name="Bridge6" parent="Bridges" instance=ExtResource("8_yce60")]
-transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 21.1471, 2.46686, 49.0518)
+transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 21.1471, 3.04854, 49.0518)
 
 [node name="Bridge7" parent="Bridges" instance=ExtResource("8_yce60")]
-transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 24.1231, 2.95276, 50.015)
+transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 24.1231, 3.53444, 50.015)
 
 [node name="Bridge8" parent="Bridges" instance=ExtResource("8_yce60")]
-transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 27.1401, 3.46451, 49.5632)
+transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 27.1401, 4.04619, 49.5632)
 
 [node name="BridgeEnd4" parent="Bridges" instance=ExtResource("9_pu5i0")]
-transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 30.1433, 3.91289, 49.9726)
+transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 30.1433, 4.49457, 49.9726)
 
 [node name="Bridge9" parent="Bridges" instance=ExtResource("8_yce60")]
-transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 46.4941, 4.9845, 43.5297)
+transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 46.4941, 5.53006, 43.5297)
 
 [node name="Bridge10" parent="Bridges" instance=ExtResource("8_yce60")]
-transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 49.47, 5.4704, 42.744)
+transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 49.47, 6.01596, 42.744)
 
 [node name="BridgeEnd5" parent="Bridges" instance=ExtResource("9_pu5i0")]
-transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 52.5207, 5.92075, 44.4504)
+transform = Transform3D(-2.29986e-07, 0, 1, 0, 1, 0, -1, 0, -2.27434e-07, 52.5207, 6.46631, 44.4504)
 
 [node name="Props" type="Node3D" parent="."]
 
@@ -252,8 +253,8 @@ transform = Transform3D(-0.23848, 3.48587e-30, 0.974733, -8.15841e-24, 1.00348, 
 
 [node name="Functional" type="Node3D" parent="."]
 
-[node name="PressurePlate6" parent="Functional" node_paths=PackedStringArray("bridge1", "bridge2", "bridge3", "bridge4", "bridges") instance=ExtResource("7_fcatn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.24693, 12.4681, -4.8078)
+[node name="PressurePlate" parent="Functional" node_paths=PackedStringArray("bridge1", "bridge2", "bridge3", "bridge4", "bridges") instance=ExtResource("7_fcatn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.19349, 12.4693, -4.52816)
 bridge1 = NodePath("../../Bridges/Bridge")
 bridge2 = NodePath("../../Bridges/Bridge2")
 bridge3 = NodePath("../../Bridges/Bridge3")
@@ -268,8 +269,8 @@ bridges = NodePath("../../Bridges")
 
 [node name="PressurePlate3" parent="Functional" node_paths=PackedStringArray("bridge1", "bridge2", "bridges") instance=ExtResource("7_fcatn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.029, 16.3644, 39.7538)
-bridge1 = NodePath("../../Bridges/Bridge5")
-bridge2 = NodePath("../../Bridges/BridgeEnd3")
+bridge1 = NodePath("../../Bridges/BridgeEnd3")
+bridge2 = NodePath("../../Bridges/Bridge5")
 bridges = NodePath("../../Bridges")
 
 [node name="PressurePlate4" parent="Functional" node_paths=PackedStringArray("bridge1", "bridge2", "bridge3", "bridge4", "bridges") instance=ExtResource("7_fcatn")]
