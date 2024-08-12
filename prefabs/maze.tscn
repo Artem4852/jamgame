@@ -25,3 +25,351 @@ rotation_order = 0
 [node name="lampSmall2" parent="lamps" instance=ExtResource("2_88uo4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.595, 2.147, 42.674)
 rotation_order = 0
+
+[node name="lampSmall3" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.723865, 2.147, 48.6557)
+rotation_order = 0
+
+[node name="lampSmall4" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.65906, 2.14712, 40.6335)
+rotation_order = 0
+
+[node name="lampSmall5" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.91092, 2.14712, 36.3057)
+rotation_order = 0
+
+[node name="lampSmall6" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49794, 2.14712, 28.6001)
+rotation_order = 0
+
+[node name="lampSmall7" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.88129, 2.14712, 24.3427)
+rotation_order = 0
+
+[node name="lampSmall8" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.40763, 2.14712, 23.2519)
+rotation_order = 0
+
+[node name="lampSmall9" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.69098, 2.14712, 24.6593)
+rotation_order = 0
+
+[node name="lampSmall10" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.40351, 2.14712, 16.6371)
+rotation_order = 0
+
+[node name="lampSmall11" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.85579, 2.14712, 10.6908)
+rotation_order = 0
+
+[node name="lampSmall12" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4554, 2.14712, 6.71483)
+rotation_order = 0
+
+[node name="lampSmall13" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.65906, 2.14712, 4.18149)
+rotation_order = 0
+
+[node name="lampSmall14" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.44982, 2.14712, -8.09818)
+rotation_order = 0
+
+[node name="lampSmall15" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.0443, 2.14712, -15.3815)
+rotation_order = 0
+
+[node name="lampSmall16" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.7773, 2.14712, 43.4816)
+rotation_order = 0
+
+[node name="lampSmall17" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.2231, 2.14712, 44.6729)
+rotation_order = 0
+
+[node name="lampSmall18" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.2677, 2.14712, 38.6613)
+rotation_order = 0
+
+[node name="lampSmall19" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.9844, 2.14712, 34.5641)
+rotation_order = 0
+
+[node name="lampSmall20" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.052, 2.14712, 28.6994)
+rotation_order = 0
+
+[node name="lampSmall21" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.2826, 2.14712, 32.636)
+rotation_order = 0
+
+[node name="lampSmall22" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.308, 2.14712, 31.2703)
+rotation_order = 0
+
+[node name="lampSmall23" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.974, 2.14712, 22.9553)
+rotation_order = 0
+
+[node name="lampSmall24" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9214, 2.14712, 20.6395)
+rotation_order = 0
+
+[node name="lampSmall25" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.6056, 2.14712, 12.271)
+rotation_order = 0
+
+[node name="lampSmall26" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.8162, 2.14712, 10.9026)
+rotation_order = 0
+
+[node name="lampSmall27" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.1846, 2.14712, 4.74468)
+rotation_order = 0
+
+[node name="lampSmall28" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.7109, 2.14712, 26.6395)
+rotation_order = 0
+
+[node name="lampSmall29" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.2371, 2.14712, 1.42887)
+rotation_order = 0
+
+[node name="lampSmall30" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.9214, 2.14712, -5.25537)
+rotation_order = 0
+
+[node name="lampSmall31" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.1846, 2.14712, -3.36062)
+rotation_order = 0
+
+[node name="lampSmall32" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.3425, 2.14712, -11.887)
+rotation_order = 0
+
+[node name="lampSmall33" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.2373, 2.14712, -1.15009)
+rotation_order = 0
+
+[node name="lampSmall34" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.8688, 2.14712, -15.0975)
+rotation_order = 0
+
+[node name="lampSmall35" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.8688, 2.14712, -25.1502)
+rotation_order = 0
+
+[node name="lampSmall36" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.0267, 2.14712, -32.5713)
+rotation_order = 0
+
+[node name="lampSmall37" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.9214, 2.14712, -22.5712)
+rotation_order = 0
+
+[node name="lampSmall38" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8161, 2.14712, -27.3607)
+rotation_order = 0
+
+[node name="lampSmall39" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.8189, 2.14712, -41.3312)
+rotation_order = 0
+
+[node name="lampSmall40" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.3012, 2.14712, -37.6981)
+rotation_order = 0
+
+[node name="lampSmall41" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.905, 2.14712, -43.1239)
+rotation_order = 0
+
+[node name="lampSmall42" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.0522, 2.14712, -39.0948)
+rotation_order = 0
+
+[node name="lampSmall43" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.42381, 2.14712, -43.0165)
+rotation_order = 0
+
+[node name="lampSmall44" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.56035, 2.14712, -29.3713)
+rotation_order = 0
+
+[node name="lampSmall45" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.8457, 2.14712, -25.181)
+rotation_order = 0
+
+[node name="lampSmall46" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.704729, 2.14712, -24.1603)
+rotation_order = 0
+
+[node name="lampSmall47" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.98973, 2.14712, -27.0612)
+rotation_order = 0
+
+[node name="lampSmall48" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.78716, 2.14712, -11.7507)
+rotation_order = 0
+
+[node name="lampSmall49" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.0893, 2.14712, -11.8044)
+rotation_order = 0
+
+[node name="lampSmall50" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.5029, 2.14712, -16.8005)
+rotation_order = 0
+
+[node name="lampSmall51" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.8714, 2.14712, -9.0783)
+rotation_order = 0
+
+[node name="lampSmall52" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.5517, 2.14712, -1.84487)
+rotation_order = 0
+
+[node name="lampSmall53" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.1003, 2.14712, 8.66316)
+rotation_order = 0
+
+[node name="lampSmall54" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.3299, 2.14712, 15.8966)
+rotation_order = 0
+
+[node name="lampSmall55" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.7805, 2.14712, 28.9445)
+rotation_order = 0
+
+[node name="lampSmall56" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4952, 2.14712, 33.7847)
+rotation_order = 0
+
+[node name="lampSmall57" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.0701, 2.14712, 42.8753)
+rotation_order = 0
+
+[node name="lampSmall58" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.8939, 2.14712, 44.977)
+rotation_order = 0
+
+[node name="lampSmall59" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.5737, 2.14712, 38.1834)
+rotation_order = 0
+
+[node name="lampSmall60" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.0939, 2.14712, 35.4669)
+rotation_order = 0
+
+[node name="lampSmall61" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.3832, 2.14712, 48.7403)
+rotation_order = 0
+
+[node name="lampSmall62" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.0647, 2.14712, 37.2252)
+rotation_order = 0
+
+[node name="lampSmall63" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.9896, 2.14712, 22.9557)
+rotation_order = 0
+
+[node name="lampSmall64" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.5061, 2.14712, 30.6674)
+rotation_order = 0
+
+[node name="lampSmall65" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.0467, 2.14712, 20.3505)
+rotation_order = 0
+
+[node name="lampSmall66" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.5651, 2.14712, 12.4611)
+rotation_order = 0
+
+[node name="lampSmall67" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.7924, 2.14712, 7.25599)
+rotation_order = 0
+
+[node name="lampSmall68" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.7098, 2.14712, 14.9805)
+rotation_order = 0
+
+[node name="lampSmall69" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.5284, 2.14712, 6.95306)
+rotation_order = 0
+
+[node name="lampSmall70" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.3062, 2.14712, 1.91768)
+rotation_order = 0
+
+[node name="lampSmall71" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.1284, 2.14712, 0.275702)
+rotation_order = 0
+
+[node name="lampSmall72" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.2025, 2.14712, -7.31386)
+rotation_order = 0
+
+[node name="lampSmall73" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.7418, 2.14712, -14.5021)
+rotation_order = 0
+
+[node name="lampSmall74" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.9265, 2.14712, -5.08808)
+rotation_order = 0
+
+[node name="lampSmall75" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.9641, 2.14712, -9.0653)
+rotation_order = 0
+
+[node name="lampSmall76" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.0804, 2.14712, -17.8225)
+rotation_order = 0
+
+[node name="lampSmall77" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.5149, 2.14712, -20.5956)
+rotation_order = 0
+
+[node name="lampSmall78" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.0941, 2.14712, -25.8134)
+rotation_order = 0
+
+[node name="lampSmall79" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.0771, 2.14712, -31.1407)
+rotation_order = 0
+
+[node name="lampSmall80" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.3814, 2.14712, -27.7108)
+rotation_order = 0
+
+[node name="lampSmall81" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.56899, 2.14712, 0.660061)
+rotation_order = 0
+
+[node name="lampSmall82" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.2439, 2.14712, -39.335)
+rotation_order = 0
+
+[node name="lampSmall83" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.4023, 2.14712, -43.4724)
+rotation_order = 0
+
+[node name="lampSmall84" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.16005, 2.14712, -45.8367)
+rotation_order = 0
+
+[node name="lampSmall85" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.9161, 2.14712, -33.0304)
+rotation_order = 0
+
+[node name="lampSmall86" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.1132, 2.14712, -45.7053)
+rotation_order = 0
+
+[node name="lampSmall87" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.101, 2.14712, -42.8157)
+rotation_order = 0
+
+[node name="lampSmall88" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.4443, 2.14712, -29.1556)
+rotation_order = 0
+
+[node name="lampSmall89" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.2979, 2.14712, -21.0896)
+rotation_order = 0

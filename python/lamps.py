@@ -7,6 +7,14 @@ def getPos(filename):
     except: return None
     return x/2, y/2
 
+single = """
+
+[node name="lampSmall{index}" parent="lamps" instance=ExtResource("2_88uo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, {x}, {y}, {z})
+rotation_order = 0"""
+output = """"""
+
+n = 89
 while True:
     # select the object
     pyautogui.click(getPos('object'))
@@ -18,60 +26,26 @@ while True:
     pyautogui.click()
     pyautogui.hotkey('command', 'c')
 
-    x = pyperclip.paste()
+    x = float(pyperclip.paste().replace(" m", ""))
 
     # copy y
     pyautogui.press('Tab')
     pyautogui.hotkey('command', 'c')
 
-    y = pyperclip.paste()
+    y = float(pyperclip.paste().replace(" m", ""))
 
     # copy z
     pyautogui.press('Tab')
     pyautogui.hotkey('command', 'c')
 
-    z = pyperclip.paste()
+    z = float(pyperclip.paste().replace(" m", ""))
 
-    y, z = z, y
+    y, z = z, -y
 
-    z = '-1*'+z
+    output += single.format(index=n, x=x, y=y, z=z)
+    n += 1
 
-    pyautogui.click(getPos('godotSelected'))
+    if n >= 99: break
 
-    # duplicate
-    pyautogui.hotkey('command', 'd')
-
-    time.sleep(1)
-
-    # click on transform
-    pyautogui.moveTo(getPos('transform'))
-    pyautogui.moveRel(0, 20)
-    pyautogui.click()
-
-    time.sleep(1)
-
-    # click on x
-    pyautogui.moveTo(getPos('godotPosX'))
-    pyautogui.moveRel(20, 20)
-    pyautogui.click()
-
-    pyperclip.copy(x)
-
-    # paste x
-    pyautogui.hotkey('command', 'v')
-
-    # click on y
-    pyautogui.press('Tab')
-
-    pyperclip.copy(y)
-
-    # paste y
-    pyautogui.hotkey('command', 'v')
-
-    # click on z
-    pyautogui.press('Tab')
-
-    pyperclip.copy(z)
-
-    # paste z
-    pyautogui.hotkey('command', 'v')
+print(output)
+pyperclip.copy(output)
